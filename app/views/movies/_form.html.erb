@@ -1,0 +1,30 @@
+<%= simple_form_for @movie, html: { multipart: true } do |f| %>
+    <% if @movie.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@movie.errors.count, "error") %> prohibited this animal from being saved:</h2>
+
+        <ul>
+        <% @movie.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+  <div class="field">
+    <%= f.input :title, label: 'Animal Name' %><br>
+  </div>
+  <div class="field">
+    <%= f.input :description, label: 'Where does this animal live?' %><br>
+  </div>
+  <div class="field">
+    <%= f.input :movie_length, label: 'How many legs does this animal have?' %><br>
+  </div>
+  <div class="field">
+    <%= f.label :image %><br>
+    <%= f.file_field :image %>
+  </div>
+  <div class="actions">
+    <%= f.submit 'Save' %>
+  </div>
+<% end %>
