@@ -1,8 +1,9 @@
 == README
 This is an app for Safari Suits for Kids.
 Here are the specs of the Safari app:
-- sqlite3 database
+- PostgreSQL database
 - boostrap
 - devise gem
 - simple_form gem
 - paperclip gem
+- deployed on Amazon EC2 with nginx
