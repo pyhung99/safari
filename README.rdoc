@@ -1,2 +1,8 @@
-This is a web app for Safari Suits for Kids.
-Created with Ruby on Rails.
+== README
+This is an app for Safari Suits for Kids.
+Here are the specs of the Safari app:
+- sqlite3 database
+- boostrap
+- devise gem
+- simple_form gem
+- paperclip gem
